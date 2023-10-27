@@ -86,10 +86,9 @@
         </div>
 
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="rou<div class=" pt-2 pb-3 space-y-1">te('chirps.index')"
-                :active="request()->routeIs('chirps.index')">
+            <x-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
                 {{ __('Chirps') }}
-            </x-responsive-nav-link>
+            </x-nav-link>
         </div>
 
     </div>
@@ -116,6 +115,5 @@
                 </x-responsive-nav-link>
             </form>
         </div>
-    </div>
     </div>
 </nav>
